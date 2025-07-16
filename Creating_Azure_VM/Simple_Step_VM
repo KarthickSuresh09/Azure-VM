@@ -1,0 +1,20 @@
+Step 1:
+  ==> Subscription: "Chose your Subscription"
+Step 2:
+  ==> Resource group: "Chose the what you created"
+Step 3:
+  ==> Virtual machine name : "VM name must be unique only within the Resource Group"
+Step 4:  
+  ==> Region : "Chose the region which region you want"
+Step 5:  
+  ==> Availability options : I choose "No infrastructure redundancy required" and If you want you availability zones
+Step 6:
+  ==> Security type : Trusted launch virtual machines
+Step 7:
+  ==> Image :"Which OS & Version you want you can chose like a Linux or Windows"
+Step 8:  
+  ==> VM architecture : "I choose X64"
+Step 9:  
+  ==> Size : I choose "Standard_D2s_v3 - 2 vcpus, 8 GiB memory (US$70.08/month)"
+Step 10:
+  ==> 
