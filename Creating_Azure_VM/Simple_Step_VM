@@ -26,3 +26,6 @@ Step 13:
   ==> Select inbound ports : linux means SSH 22 OR windows means RDP 3389 
 Step 14:
   ==> Review + Create 
+
+Step 15:
+  ==> In terminal to connect the azure vm command is "ssh username@IP Address" 
