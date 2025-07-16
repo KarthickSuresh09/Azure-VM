@@ -17,4 +17,12 @@ Step 8:
 Step 9:  
   ==> Size : I choose "Standard_D2s_v3 - 2 vcpus, 8 GiB memory (US$70.08/month)"
 Step 10:
-  ==> 
+  ==> Authentication type : I choose password authentication for type "Password"
+Step 11:  
+  ==> Username : Enter the your username 
+Step 12:  
+  ==> Password : enter the password
+Step 13:  
+  ==> Select inbound ports : linux means SSH 22 OR windows means RDP 3389 
+Step 14:
+  ==> Review + Create 
