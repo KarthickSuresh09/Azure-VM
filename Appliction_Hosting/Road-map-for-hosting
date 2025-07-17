@@ -1,0 +1,20 @@
+Steps of VM part: 
+Step 1: create Linux vm
+
+Step 2: install a apache2 in your server 
+
+Step 3: create connection between vm and file share these steps are in folder "creating-mount-storage-linux.txt"
+
+Step 4: after the connection you need move file /mnt/azure path to var/www/html path
+
+Step 5: after successfully moved means hit VM IP in browser application will host
+
+Steps Storage account part:
+Step 1: create one storage account 
+
+Step 2: connect the storage account to Azure storage explorer
+
+Step 3: create file share in your storage account
+
+Step 4: Upload your application file in fileshre
+
