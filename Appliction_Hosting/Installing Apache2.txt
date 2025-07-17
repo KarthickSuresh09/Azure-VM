@@ -1,0 +1,25 @@
+Installing Steps of apache2
+
+Step1 :
+ ==> This command will install appache2 in ubuntu/Debian server : "sudo apt install apache2 -y"
+ ==> This command will install appache2 in CentOS / RHEL / Amazon Linux (yum-based): "sudo yum install httpd -y"
+
+Step2 :
+ ==> This command will start & enable the apache2 in server ubuntu/Debian server
+sudo systemctl start apache2
+sudo systemctl enable apache2
+
+ ==> This command will start & enable the apache2 in server CentOS / RHEL / Amazon Linux (yum-based) server
+sudo systemctl start httpd 
+sudo systemctl enable httpd
+
+Step3 :
+ ==> To verify apache2 to installed or not
+sudo systemctl status apache2     # For Ubuntu/Debian
+sudo systemctl status httpd       # For CentOS/RHEL
+
+
+Hosting steps of apache2
+Step1 :
+ ==> Entere this location path : cd /var/www/html/
+ ==> Remove the existing html file and create new index.html inside the html file write a content anything 

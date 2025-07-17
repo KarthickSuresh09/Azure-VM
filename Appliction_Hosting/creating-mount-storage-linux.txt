@@ -1,0 +1,41 @@
+Step 1: Create a storage account 
+
+Step 2: create a linux vm
+
+Step 3: create a fileshare in created storage account
+
+Step 4: upload some files in the fileshare
+
+Step 5: Install cifs-utils
+sudo apt update && sudo apt install cifs-utils -y
+
+Step 6: Manually Mount the File Share
+sudo mount -t cifs //<storage-account>.file.core.windows.net/<file-share> /mnt/azure \
+-o vers=3.0,username=<storage-account>,password=<storage-key>,dir_mode=0777,file_mode=0777,sec=ntlmssp
+
+example: sudo mount -t cifs //storage16july.file.core.windows.net/myshare /mnt/azure \
+-o vers=3.0,username=storage16july,password='6lGpq7lcdNvfT+k7kfupfKDy8+KTmZiagBhjcCxIFu9tqDANaacQYQ2CTWZRBk+5fp1amgpYEfvc+AStlNHdGg==',dir_mode=0777,file_mode=0777,sec=ntlmssp
+
+Step 7: Verify the Mount
+df -h | grep azure
+
+Step 8: Open fstab file:
+sudo nano /etc/fstab
+
+Step 9: Add the following line (for SMB):
+//<storage-account>.file.core.windows.net/<file-share> /mnt/azure cifs vers=3.0,username=<storage-account>,password=<storage-key>,dir_mode=0777,file_mode=0777,sec=ntlmssp 0 0
+
+Step 10: Reload fstab and test
+sudo mount -a
+
+Step 11: Verify the Mount
+  ls -l /mnt/azure
+df -h | grep azure
+
+
+Step 12: Chanage the directory
+cd /mnt/azure
+
+step 13: List the Contents of the Mounted File Share
+ls -lrt
+  
