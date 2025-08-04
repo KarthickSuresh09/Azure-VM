@@ -1,1 +1,17 @@
+Step 1:
+ ==> Go to your Vm disk option and click on which disk you need to take snapshot
+Step 2:
+ ==> enter the SnapShot name 
+Step 3:
+ ==> Choose the Snapshot type incremental OR full
+| Type            | Azure Support         | Storage Used          | Cost   | Use Case        |
+| --------------- | --------------------  | --------------------- | ------ | --------------- |
+| **Incremental** | ✅ Yes                | Changed data only     | Lower  | Regular backups |
+| **Full**        | ❌ No (simulate only) | Whole disk every time | Higher | Not native      |
+
+
+Step 4:
+ ==> Chose your a Storage type like "Standard HDD (locally-redundant storage)"
+Step 5:
+ ==> rest of them need to default and create a snapshot
 
