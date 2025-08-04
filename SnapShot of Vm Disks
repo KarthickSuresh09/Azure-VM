@@ -27,4 +27,10 @@ Step 10:
  ==> Chose Availability zone I will go No infrastructure redundancy required
 Step 11:
  ==> rest of them keep it as of default and create a disk
+Step 12:
+ ==> click on swap os disk button
+Step 13:
+ ==> chose the disk option what is your disk
+Step 14:
+ ==> And enter your vm name and click on Ok button
 
