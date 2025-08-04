@@ -46,6 +46,7 @@ Step 20:
   ==> Review + Create 
 
 Step 21:
-  ==> Coonect via RDP to your Vm and check it data disks
+  ==> Coonect via RDP to your Vm and check it data disks  (RUN diskmgmt.ms) and it will open disk mangement
+       Now you can clik on disk2 and and finsh it
                          OR
   ==> In terminal to connect the azure vm command is "ssh username@IP Address" 
