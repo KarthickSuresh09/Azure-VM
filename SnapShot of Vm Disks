@@ -15,3 +15,16 @@ Step 4:
 Step 5:
  ==> rest of them need to default and create a snapshot
 
+Step 6:
+ ==> You can go check the Snapshot services it created or not
+Step 7:
+ ==> Now you can click on your snapshot 
+Step 8:
+ ==> Click on create disk button 
+Step 9:
+ ==> enter the disk name of your snapshot
+Step 10: 
+ ==> Chose Availability zone I will go No infrastructure redundancy required
+Step 11:
+ ==> rest of them keep it as of default and create a disk
+
