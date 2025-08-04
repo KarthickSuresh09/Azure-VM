@@ -1,1 +1,51 @@
 when we are adding extra disk in Vm or server that is called as a Data Disk
+
+==> Creating Vm with Data Disks 
+
+
+Step 1:
+  ==> Subscription: "Chose your Subscription"
+Step 2:
+  ==> Resource group: "Chose the what you created"
+Step 3:
+  ==> Virtual machine name : "VM name must be unique only within the Resource Group"
+Step 4:  
+  ==> Region : "Chose the region which region you want"
+Step 5:  
+  ==> Availability options : I choose "No infrastructure redundancy required" and If you want you availability zones
+Step 6:
+  ==> Security type : Trusted launch virtual machines
+Step 7:
+  ==> Image :"Which OS & Version you want you can chose like a Linux or Windows"
+Step 8:  
+  ==> VM architecture : "I choose X64"
+Step 9:  
+  ==> Size : I choose "Standard_D2s_v3 - 2 vcpus, 8 GiB memory (US$70.08/month)"
+Step 10:
+  ==> Authentication type : I choose password authentication for type "Password"
+Step 11:  
+  ==> Username : Enter the your username 
+Step 12:  
+  ==> Password : enter the password
+Step 13:  
+  ==> Select inbound ports : linux means SSH 22 OR windows means RDP 3389 
+Step 14:
+  ==> Click on Disks and it will show the OS disks with defalt size
+Step 15:
+  ==> There is one option Data disks for your VM click on (Create and attach a new disk OR  Attach an existing disk)
+Step 16:
+  ==> I am clicking create a new disks
+Step 17:
+  ==> Enter your Disks Name
+Step 18:
+  ==> And now you can choose your disks source type i go with None
+Step 19:
+  ==> If you want to change your disk storage you can change the stoarge 
+
+Step 20:
+  ==> Review + Create 
+
+Step 21:
+  ==> Coonect via RDP to your Vm and check it data disks
+                         OR
+  ==> In terminal to connect the azure vm command is "ssh username@IP Address" 
