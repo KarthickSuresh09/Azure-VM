@@ -1,1 +1,35 @@
+A temporary disk in Azure is a special type of disk that provides fast, 
+local storage directly attached to the physical host machine where your VM is running. However, as the name suggests, 
+the data on this disk is not persistent and can be lost at any time during events like:
 
+* VM deallocation (stop)
+* Host maintenance or hardware failures
+* VM resize or restarts
+
+🔹 Key Points about Temporary Disk
+Feature	Details
+Purpose	         Store temporary files like swap space, page file, or app cache
+Windows Path	   D:\ drive
+Linux Path	     /dev/sdb (usually mounted to /mnt or /mnt/resource)
+Persistence	     Not persistent — data can be lost
+Performance	     Very fast (since it's local SSD storage)
+Included Cost	   Free (included with VM pricing)
+
+🔸 Typical Uses
+✅ Use temporary disk for:
+Pagefile or swap space
+Cache
+Temp files for apps
+Build artifacts that don’t need to be stored
+
+🚫 Don’t use it for:
+Databases
+Persistent application data
+Important logs
+
+🔹 Example in Windows VM
+If you log into a Windows Azure VM, you’ll usually see:
+*C:* → OS disk (persistent)
+*D:* → Temporary disk (not persistent)
+You might see a message like:
+"The data on the D: drive will be lost if the virtual machine is stopped (deallocated)."
