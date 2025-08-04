@@ -1,0 +1,15 @@
+Azure Vm Disks
+* Opersting System Disks
+* Data Disks 
+* Temporary Disks
+* Ephemeral OS Disk	
+
+
+
+| Disk Type             | Description                                                                 | Use Case                          |
+| --------------------- | --------------------------------------------------------------------------- | --------------------------------- |
+| * OS Disk**           | Stores the operating system. Created from an image.                         | Required for booting the VM       |
+| * Data Disk**         | Optional disks used to store application data or files.                     | For databases, file storage, etc. |
+| * Temporary Disk**    | Local SSD (D:\ drive in Windows). Data **not persisted** during VM restart. | For scratch data, page/swap files |
+| * Ephemeral OS Disk** | OS stored on local VM storage. Faster boot time.                            | Good for stateless workloads      |
+
