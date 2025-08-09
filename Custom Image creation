@@ -1,0 +1,42 @@
+Sysprep menas before you need to customized image you need to generalized VM after generalized vm remove the system identiy fiers
+
+Basic Steps to create an custom Image
+
+Step 1:
+  ===> First add web sever feature in Server manager(webIIS)
+Step 2:
+  ===> just go to windows:c/inetpub/wwwroot folder edit you os image
+Step 3:
+  ===> Now you can go this folder C:\Windows\System32\Sysprep
+Step 4:
+  ===> Just click on Sysprep and now you can click the Genralize the check box and select shutdown and click Ok
+Step 5:
+  ===> just enter your Vm an click on capture button in your Vm and chose image option
+Step 6: 
+  ===> go to Gallery details section in Target Azure compute gallery create one for you
+Step 7:
+  ===> just go the Target VM image definition section create new
+        Step 1:
+          ===> just enter VM image definition name and leave it everything as default and click on Ok
+Step 8:
+  ===> enter version number like a "1.0.0"
+Step 9:
+  ===> enter the End of life date after this your coustm image will be not there in gallery
+Step 10:
+  ===> just click on the Lock deleting Replicated Locations check box
+Step 11:
+  ===> chose the Default storage sku i will go with "Standard HDD LRS"
+Step 10:
+  ===> click Reveiw + create
+Step 11:
+  ===> now you can create new Vm step like same only but region must be same
+Step 12 :
+  ===> in image section click on see all images and click on shared images now your images will be availabel in there select your image create a vm
+Step 13 :
+  ===> create your vm and check it in your browser customely created or not 
+        (After customied Vm created refernce vm will not work )
+
+
+
+
+
