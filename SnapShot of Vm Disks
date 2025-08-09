@@ -28,7 +28,9 @@ Step 10:
 Step 11:
  ==> rest of them keep it as of default and create a disk
 Step 12:
- ==> click on swap os disk button
+ ==> for OS disk you can click on swap os disk button and for data disk move right side of a data disk section you will see 
+     host caching there is one plugin detach click on detach data disk and you can click attach existing disk now you can chose your
+     data disk name apply for data disk no need virtual (stop and start)
 Step 13:
  ==> chose the disk option what is your disk
 Step 14:
