@@ -38,5 +38,26 @@ Step 13 :
 
 
 
+1. Performance Optimization
+Use Case: A smart washing machine runs a custom Linux OS without desktop apps, so it boots in 5 seconds and only runs washing logic.
+
+2. Security & Control
+Use Case: A bank ATM’s OS has no browser, no USB drivers, and only runs the ATM software — so hackers can’t install random apps.
+
+3. Hardware Specialization
+Use Case: A PlayStation console’s OS is tuned for its custom GPU so games run faster than they would on normal Windows.
+
+4. Compliance & Regulations
+Use Case: A self-driving car’s safety system runs a certified OS that meets road safety regulations — it must pass strict tests.
+
+5. Real-Time Processing
+Use Case: A robot arm in a factory runs a real-time OS so it reacts to sensor input in milliseconds without delay.
+
+6. Branding & User Experience
+Use Case: Samsung Smart TVs run “Tizen OS” so the menu design, features, and app store look unique to Samsung.
+
+7. Cost Reduction
+Use Case: A cheap fitness tracker uses FreeRTOS (free) instead of Windows IoT (paid), lowering device cost.
+
 
 
