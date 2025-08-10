@@ -37,6 +37,7 @@ Step 13 :
         (After customied Vm created refernce vm will not work )
 
 
+reason for custom image creation
 
 1. Performance Optimization
 Use Case: A smart washing machine runs a custom Linux OS without desktop apps, so it boots in 5 seconds and only runs washing logic.
