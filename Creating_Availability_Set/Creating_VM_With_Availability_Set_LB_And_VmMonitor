@@ -1,4 +1,4 @@
-Please enable with RDP Http protocall
+Please enable with RDP Http protocall  and Script file name must be a "installwebserver.ps1" 
 
 Step 1:
   enter the Virtual machine name
