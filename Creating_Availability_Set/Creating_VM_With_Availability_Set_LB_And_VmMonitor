@@ -1,5 +1,9 @@
 Please enable with RDP Http protocall  and Script file name must be a "installwebserver.ps1" 
 
+C:\WindowsAzure\Logs\Plugins\Microsoft.Compute.CustomScriptExtension\
+
+
+
 Step 1:
   enter the Virtual machine name
 
