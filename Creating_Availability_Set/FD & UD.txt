@@ -1,0 +1,28 @@
+
+In Azure,
+FD = Fault Domain
+UD = Update Domain
+
+1. FD – Fault Domain
+* Meaning: A group of hardware (servers, power, network) that shares the same physical resources in a data center.
+* Example in Azure: If you put 3 VMs in an availability set with 2 FDs, 
+                    Azure will spread them across the two FDs, so hardware failure doesn’t take all VMs down.
+
+
+2. UD – Update Domain
+* Meaning: A logical group of VMs that can be updated or rebooted at the same time during maintenance.
+* Example in Azure: If you have 5 VMs across 5 UDs, Azure updates 1 UD at a time — 4 VMs stay online while 1 is being updated
+
+
+✅ In short:
+FD → Protects against hardware failure.
+UD → Protects against planned maintenance downtime.
+
+| VM Name | Fault Domain | Update Domain |
+| ------- | ------------ | ------------- |
+| VM1     | FD0          | UD0           |
+| VM2     | FD1          | UD1           |
+| VM3     | FD0          | UD2           |
+| VM4     | FD1          | UD0           |
+| VM5     | FD0          | UD1           |
+| VM6     | FD1          | UD2           |
