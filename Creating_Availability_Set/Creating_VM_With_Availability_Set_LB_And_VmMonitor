@@ -66,3 +66,7 @@ Step 12:
       click on Review + create and create it      
 
 
+
+
+now You can verify the guest agent is running or not in your VM prees windows + R  button enter services.msc 
+it will show the guest agent is running or not
