@@ -1,0 +1,72 @@
+Please enable with RDP Http protocall  and Script file name must be a "installwebserver.ps1" 
+
+C:\WindowsAzure\Logs\Plugins\Microsoft.Compute.CustomScriptExtension\
+
+
+
+Step 1:
+  enter the Virtual machine name
+
+step 2:
+  Choose the Region which region you need
+
+Step 3:
+  choose the Availability options for Availability set
+
+Step 4:
+  Now you can create the Availability set
+
+Step 5:
+  you can choose the Security type is "Trusted launch virtual machine"
+
+Step 6:
+  Now you can chose your image which os you need
+
+Step 7: 
+  Now choose vm size which size you want for vm i will go with "b2ms"
+
+Step 8:
+  enter the username and password for your vm
+
+Step 9:
+  Now select inbound rules rdp and http
+
+Step 10:
+   In Networking if you scroll down there is option called loadbalancing
+
+Step 11: 
+   create a Azure load balancer
+         ==> Enter load balancer name
+         ==> leave it everything as default and click on create button
+
+Step 12:
+   Just move on advanced section and click the option select the extension to install
+       ==> search custom script extension and click on Next
+       ==> click on browse option it will ask the storage account you can create on it now
+       ==> enter storage account name (Name must be unique)
+       ==> select location of your storage account
+       ==> enter the Resource group
+       ==> And click on it OK
+       ===> Now select the storage account and create a container
+       ===> enter the container name and create it and upload this command in containner
+          Install-WindowsFeature -Name Web-Server -IncludeManagementTools
+          Set-Location -Path C:\inetpub\wwwroot
+          Add-Content iisstart.htm "<H1><center>Welcome, Azure Rocks!!!</center></H1>"
+          Invoke-Command -ScriptBlock {iisreset}
+
+         * this command will do this 
+       ===>  Install IIS (Web-Server) with management tools.
+       ===> Change location to C:\inetpub\wwwroot.
+       ===> Create/append iisstart.htm with a welcome message.
+       ===> Restart IIS using iisreset.
+
+       ===> click on the file and select it and created it 
+
+ Step 13:
+      click on Review + create and create it      
+
+
+
+
+now You can verify the guest agent is running or not in your VM prees windows + R  button enter services.msc 
+it will show the guest agent is running or not
