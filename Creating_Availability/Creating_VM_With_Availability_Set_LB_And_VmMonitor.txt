@@ -65,8 +65,19 @@ Step 12:
  Step 13:
       click on Review + create and create it      
 
+Now You Can create another Vm as well as simillar steps
 
+Step 14: 
+      Now this time dont create the AvailabilitySet you can chose old avset
 
+Step 15:
+       this time under networking section chose vnet old one "vnet-centralindia-1"
+
+step 16:
+       Now you can chose old load balancer 
+
+step 17: 
+       Now you can do same step as well as in advance section and create VM
 
 now You can verify the guest agent is running or not in your VM prees windows + R  button enter services.msc 
 it will show the guest agent is running or not
