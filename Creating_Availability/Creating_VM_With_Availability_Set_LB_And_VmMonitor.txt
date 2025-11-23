@@ -41,7 +41,7 @@ Step 11:
 
 Step 12:
    Just move on advanced section and click the option select the extension to install
-       ==> search custom script extension and click on Next
+       ==> search "custom script extension" and click on Next
        ==> click on browse option it will ask the storage account you can create on it now
        ==> enter storage account name (Name must be unique)
        ==> select location of your storage account
