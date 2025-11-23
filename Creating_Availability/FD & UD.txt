@@ -18,6 +18,9 @@ UD = Update Domain
 FD → Protects against hardware failure.
 UD → Protects against planned maintenance downtime.
 
+Fault Domain = Horizontal separation = Row
+Update Domain = Vertical separation = Column
+
 | VM Name | Fault Domain | Update Domain |
 | ------- | ------------ | ------------- |
 | VM1     | FD0          | UD0           |
